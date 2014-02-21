@@ -28,17 +28,34 @@
 
 </style>
 
+</script>
 </head>
 <body>
 
-<h1>Swipe 2</h1>
-
-
+<h1>Neighborhoods</h1>
 
 <div id='mySwipe' style='max-width:500px;margin:0 auto' class='swipe'>
   <div class='swipe-wrap'>
-    <div><b>0</b></div>
-    <div><b>1</b></div>
+    
+    <div>
+    <!--
+			<div style="background-image:url('data/bernalheights.jpg'); background-size: 100%;">
+		-->
+			<div>
+				<img src="data/bernalheights.jpg" width="100%" /><br />
+				<p><b>Bernal Heights</b></p>
+				<p>Many San Franciscans never travel to Bernal Heights, located as it is at the southern edge of the Mission valley, served by only a few city bus lines and perched atop a steep hill, to boot.</p>
+			</div>
+    </div>
+    
+    <div>
+	    <div>
+				<img src="data/castro.jpg" width="100%" /><br />
+				<p><b>The Castro</b></p>
+				<p>What was once dairy farms and dirt roads is now one of the city's most vibrant and cohesive communities, saturated with shops and bars so popular that patrons spill out onto the street.</p>    
+			</div>
+    </div>
+    
     <div><b>2</b></div>
     <div><b>3</b></div>
     <div><b>4</b></div>
@@ -65,31 +82,15 @@
 
 <div style='text-align:center;padding-top:20px;'>
   
-  <button onclick='mySwipe.prev()'>prev</button> 
-  <button onclick='mySwipe.next()'>next</button>
+  <button onclick='mySwipe.prev()'>Previous</button> 
+  <button onclick='findSchools()'>Find Schools</button> 
+  <button onclick='mySwipe.next()'>Next</button>
 
 </div>
 
 
 
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script src='swipe.js'></script>
-<script>
-
-// pure JS
-var elem = document.getElementById('mySwipe');
-window.mySwipe = Swipe(elem, {
-  // startSlide: 4,
-  // auto: 3000,
-  // continuous: true,
-  // disableScroll: true,
-  // stopPropagation: true,
-  // callback: function(index, element) {},
-  // transitionEnd: function(index, element) {}
-});
-
-// with jQuery
-// window.mySwipe = $('#mySwipe').Swipe().data('Swipe');
-
-</script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src='swipe.js' ></script>
+<script src='travelsight.js' ></script>

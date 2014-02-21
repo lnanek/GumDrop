@@ -50,14 +50,14 @@ html, body {
   overflow: auto;
 }
 
-#mySwipe div b {
+.swipe-wrap > div > div {
   display:block;
   font-weight:bold;
   color:#14ADE5;
   font-size:20px;
   text-align:center;
   margin:10px;
-  padding:100px 10px;
+  padding:10px 10px;
   box-shadow: 0 1px #EBEBEB;
   background: #fff;
   border-radius: 3px;
