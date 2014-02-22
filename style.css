@@ -64,3 +64,8 @@ html, body {
   border: 1px solid;
   border-color: #E5E5E5 #D3D3D3 #B9C1C6;
 }
+
+
+.swipe-wrap > div > div img {
+  max-height: 300px;
+}
