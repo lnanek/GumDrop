@@ -1,0 +1,178 @@
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, del, dfn, em, img, ins, kbd, q, samp, small, strong, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, footer, header, nav, section {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}
+body {
+  -webkit-text-size-adjust:none;
+  font-family:sans-serif;
+  min-height:416px;
+}
+h1 {
+  color:#14ADE5;
+  font-size:33px;
+  margin:20px 0 15px;
+  text-align:center;
+}
+
+#navBar a {
+  color:#14ADE5;
+  font-size:20px;
+}
+
+h2 {
+  font-size:14px;
+  font-weight:bold;
+  color:#3c3c3c;
+  margin:20px 10px 10px;
+}
+small {
+  margin:0 10px 30px;
+  display:block;
+  font-size:12px;
+}
+a {
+  margin:0 0 0 10px;
+  font-size:12px;
+  color:#3c3c3c;
+}
+
+
+html, body {
+  background: #f3f3f3;
+}
+
+#console {
+  font-size: 12px;
+  font-family:"Inconsolata", "Monaco", "Consolas", "Andale Mono", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
+  color: #999;
+  line-height: 18px;
+  margin-top: 20px;
+  max-height: 150px;
+  overflow: auto;
+}
+
+.swipe-wrap > div > div {
+  display:block;
+  color:#14ADE5;
+  font-size:20px;
+  text-align:center;
+  margin:10px;
+  padding:10px 10px;
+  box-shadow: 0 1px #EBEBEB;
+  background: #fff;
+  border-radius: 3px;
+  border: 1px solid;
+  border-color: #E5E5E5 #D3D3D3 #B9C1C6;
+}
+
+.swipe-wrap > div > div b {
+  padding: 5px;
+  display: block;
+}
+
+.swipe-wrap > div > div img {
+  max-height: 300px;
+}
+
+#macysResults a {
+	display: block;
+	padding: 10px;
+  background: #fff;
+  border: 1px solid #14ADE5;
+  margin: 5px;
+  font-size:12px;
+  color:#14ADE5;
+	text-align: left;
+	clear: both;
+	max-width: 400px;
+}
+
+#macysResults img {
+	width: 40px;
+	height: 40px;
+	padding-right: 10px;
+	float: left;
+}
+
+#macysResults p {
+	max-width: 300px;
+	float: left;
+}
+
+.macysLoadingMessage {
+	text-align: center;
+  font-size:20px;
+}
+
+#macysResults .macysSeeMoreUrl {
+	text-align: center;
+  font-size:20px;
+  text-align: right;
+}
+
+#likeOptions {
+	padding: 10px;
+  background: #fff;
+  border: 1px solid #14ADE5;
+  margin: 5px;
+}
+
+#contentBlock, #capitalOneResults {
+	padding: 10px;
+  background: #fff;
+  border: 1px solid #14ADE5;
+  margin: 5px;
+}
+
+#contentBlock img {
+	width: 100%;
+}
+
+#likeOptions > div {
+	padding: 10px;
+  font-size:20px;
+  color:#14ADE5;
+}
+
+#likeOptions .action {
+  font-weight:bold;
+  padding-bottom: 0px;
+}
+
+.likeActionButton {
+	border: 1px solid #204a87;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.likeActionButton:hover {
+	color: #fff !important;
+	background-color: #14ADE5;
+}
+
+	/* Swipe 2 required styles */
+
+	.swipe {
+		overflow: hidden;
+		visibility: hidden;
+		position: relative;
+	}
+	.swipe-wrap {
+		overflow: hidden;
+		position: relative;
+	}
+	.swipe-wrap > div {
+		float:left;
+		width:100%;
+		position: relative;
+	}
+
+	/* END required styles */
