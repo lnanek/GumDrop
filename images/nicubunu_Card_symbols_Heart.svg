@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://web.resource.org/cc/" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:svg="http://www.w3.org/2000/svg" id="svg1" height="80pt" width="80pt">
+  <defs id="defs3">
+    <linearGradient id="linearGradient1549" x2=".61321" y1=".087179" x1=".099057" y2=".55385">
+      <stop id="stop1576" stop-color="#fff" stop-opacity=".5" offset="0"/>
+      <stop id="stop1577" stop-color="#fff" stop-opacity="0" offset="1"/>
+    </linearGradient>
+  </defs>
+  <g id="g1550" transform="matrix(.93391 0 0 .92857 -186.37 14.784)">
+    <g id="g1605" transform="translate(78.808 -152.4)">
+      <path id="path1585" stroke-linejoin="round" d="m147.21 156.42c-2.54 0.01-5.33 0.48-8.41 1.53-33.62 19.53 11.7 51.04 30.84 78.09v0.25c0.03-0.04 0.07-0.08 0.1-0.12 0.02 0.04 0.06 0.08 0.09 0.12v-0.66c17.02-29.85 61.44-61.56 30.84-77.68-24.23-8.25-30.71 19.2-30.93 20.19-0.2-0.87-5.15-21.81-22.53-21.72z" fill-rule="evenodd" transform="matrix(1.1054 0 0 1.0796 -12.014 -18.867)" stroke="#f00" stroke-width="1.2287" fill="#f00"/>
+    </g>
+    <path id="path927" fill-rule="evenodd" fill="url(#linearGradient1549)" d="m229.84-2.3944c-2.8 0.0137-5.88 0.5204-9.29 1.6532-37.16 21.092 12.94 55.106 34.1 84.313v0.27c0.03-0.042 0.07-0.094 0.1-0.135 0.03 0.041 0.07 0.093 0.1 0.135v-0.716c18.81-32.221 67.91-66.459 34.1-83.867-26.79-8.9008-33.95 20.727-34.2 21.795-0.22-0.932-5.68-23.543-24.91-23.448z"/>
+  </g>
+  <metadata>
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <cc:license rdf:resource="http://creativecommons.org/licenses/publicdomain/"/>
+        <dc:publisher>
+          <cc:Agent rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title>Card symbols: Heart</dc:title>
+        <dc:date>2009-03-10T13:19:14</dc:date>
+        <dc:description>Heart symbol for playing cards</dc:description>
+        <dc:source>http://openclipart.org/detail/22073/card-symbols:-heart-by-nicubunu</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>nicubunu</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>cards</rdf:li>
+            <rdf:li>clip art</rdf:li>
+            <rdf:li>clipart</rdf:li>
+            <rdf:li>gambling</rdf:li>
+            <rdf:li>game</rdf:li>
+            <rdf:li>heart</rdf:li>
+            <rdf:li>image</rdf:li>
+            <rdf:li>love</rdf:li>
+            <rdf:li>media</rdf:li>
+            <rdf:li>play</rdf:li>
+            <rdf:li>playing cards</rdf:li>
+            <rdf:li>png</rdf:li>
+            <rdf:li>public domain</rdf:li>
+            <rdf:li>svg</rdf:li>
+            <rdf:li>symbol</rdf:li>
+            <rdf:li>valentine</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/>
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>

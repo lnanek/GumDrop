@@ -13,10 +13,10 @@ body {
   min-height:416px;
 }
 h1 {
+  color:#14ADE5;
   font-size:33px;
-  margin:50px 0 15px;
+  margin:20px 0 15px;
   text-align:center;
-  color:#212121;
 }
 h2 {
   font-size:14px;
@@ -52,7 +52,6 @@ html, body {
 
 .swipe-wrap > div > div {
   display:block;
-  font-weight:bold;
   color:#14ADE5;
   font-size:20px;
   text-align:center;
@@ -65,7 +64,41 @@ html, body {
   border-color: #E5E5E5 #D3D3D3 #B9C1C6;
 }
 
+.swipe-wrap > div > div b {
+  padding: 5px;
+  display: block;
+}
 
 .swipe-wrap > div > div img {
   max-height: 300px;
 }
+
+#likeOptions {
+	padding: 10px;
+  background: #fff;
+  border: 1px solid #14ADE5;
+  margin: 5px;
+}
+
+#likeOptions > div {
+	padding: 10px;
+  font-size:20px;
+  color:#14ADE5;
+}
+
+#likeOptions .action {
+  font-weight:bold;
+  padding-bottom: 0px;
+}
+
+.likeActionButton {
+	border: 1px solid #204a87;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+
+

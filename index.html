@@ -1,7 +1,7 @@
 <!DOCTYPE HTML> 
 <html>
 <head>
-<title>Swipe 2</title>
+<title>Home Sweet Home 2.0</title>
 <meta http-equiv="X-UA-Compatible" content="IE=8">
 <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'/> 
 <link href='style.css' rel='stylesheet'/>
@@ -32,7 +32,10 @@
 </head>
 <body>
 
-<h1>Neighborhoods</h1>
+<h1>
+	Home Sweet Home 2.0<br />
+	SF Neighborhoods
+</h1>
 
 <div id='mySwipe' style='max-width:500px;margin:0 auto' class='swipe'>
   <div class='swipe-wrap'>
@@ -131,17 +134,61 @@
 </b></p><p>From the stunning views at Alamo Square to the historic Fillmore to ever-changing Divisadero Street, you can experience several distinct vibes in the space of a few blocks.</p></div></div>
 
   </div>
+  
+  <!-- Buttons under the swipe content. -->
+  <div>
+		<!-- Dislike - see next -->
+		<div style="text-align: center; float: left; width: 49%" >
+			<img onclick='mySwipe.next()' 
+				class="hoverOnOffSrc"
+  			src="images/button_left_dark.png" 
+  			onsrc="images/button_left.png"
+  			offsrc="images/button_left_dark.png"
+	  		/>
+  	</div>
+
+		<!-- Like - see options -->  	
+		<div style="text-align: center; float: left; width: 49%" >
+			<img onclick='like()' 
+				class="hoverOnOffSrc"
+  			src="images/button_like.png" 
+  			onsrc="images/button_like_dark.png"
+  			offsrc="images/button_like.png"
+	  		/>
+  	</div>
+  	
+  	<div style="clear:both"></div>
+  </div>
+  
 </div>
 
 
-
-<div style='text-align:center;padding-top:20px;'>
+<div id='likeOptions' style='display:none; max-width:500px;margin:0 auto' >
   
-  <button onclick='mySwipe.prev()'>Previous</button> 
-  <button onclick='findSchools()'>Research: Schools</button> 
-  <button onclick='findHotels()'>Visit: Hotels</button> 
-  <button onclick='mySwipe.next()'>Next</button>
+  <div class="action" >Research</div> 
+  
+  <div class="likeActionButton" onclick='findSchools()'>Schools</div> 
 
+  <div class="action" >Visit</div> 
+  
+  <div class="likeActionButton" onclick='findHotels()'>Hotels</div> 
+
+  <div class="likeActionButton" onclick='reserveTour()'>Reserve Tour</div> 
+
+  <div class="action" >Settle</div> 
+  
+  <div class="likeActionButton" onclick='findApartments()'>Apartments</div> 
+  
+  <div class="likeActionButton" onclick='furnish()'>Furnish</div> 
+
+  <div style="text-align: left" onclick="closeLikeOptions()" >
+  	<img class="hoverOnOffSrc"
+  		src="images/button_back.png" 
+  		onsrc="images/button_back_dark.png"
+  		offsrc="images/button_back.png"
+  		/>
+  </div> 
+  
 </div>
 
 
