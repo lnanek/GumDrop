@@ -1,4 +1,5 @@
 var express = require('express');
+var logfmt = require("logfmt");
 var crypto = require('crypto'); 
 var https = require('https')
 var request = require('request');
@@ -73,7 +74,9 @@ app.get('/capital_one', function(req, res){
   //res.send('Hello Capital One');
 });
 
-app.listen(3000);
+var port = Number(process.env.PORT || 3000);
+app.listen(port, function() {
+  console.log("Listening on " + port);
+});
 
-console.log('Listening on port 3000');
 
