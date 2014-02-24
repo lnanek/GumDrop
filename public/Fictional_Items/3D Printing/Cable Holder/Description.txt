@@ -1,0 +1,8 @@
+you can either purchase double sided tape from any hardware stores or can insert 2 quarters on the bottom to make it heavier if you dont have access to double sided tape.
+
+CableHolder_FIX file is the normal fixed design, just print it out and tape it to the table. (No support is needed) 
+CableHolder_with_coin_FIX file has a coin hole underneath for inserting coins so it can become heavy. (Support is needed)
+
+
+This file is protected by the Creative Commons License: http://creativecommons.org/licenses/by/3.0/
+The original item can be found here: http://www.thingiverse.com/thing:70549
