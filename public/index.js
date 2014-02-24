@@ -1,23 +1,33 @@
 
-var currentNeighborhood = 'Bernal Heights';
+var currentNeighborhood = 'The Mission';
 
-// Setup Swipe library to swipe through options.
-var elem = document.getElementById('mySwipe');
-window.mySwipe = Swipe(elem, {
-  callback: function(index, element) {
-		currentNeighborhood = $(element).find('b').text();
-		//alert('currentNeighborhood = ' + currentNeighborhood);
-  }
-  // startSlide: 4,
-  // auto: 3000,
-  // continuous: true,
-  // disableScroll: true,
-  // stopPropagation: true,
-  // transitionEnd: function(index, element) {}
-});
+var currentPage = 1;
 
-// alternate way with jQuery
-// window.mySwipe = $('#mySwipe').Swipe().data('Swipe');
+var macysCategory = '29391';
+
+setupSwipe();
+
+macysNext();
+
+function setupSwipe() {
+	// Setup Swipe library to swipe through options.
+	var elem = document.getElementById('mySwipe');
+	window.mySwipe = Swipe(elem, {
+		callback: function(index, element) {
+			currentNeighborhood = $(element).find('b').text();
+			//alert('currentNeighborhood = ' + currentNeighborhood);
+		}
+		// startSlide: 4,
+		// auto: 3000,
+		// continuous: true,
+		// disableScroll: true,
+		// stopPropagation: true,
+		// transitionEnd: function(index, element) {}
+	});
+
+	// alternate way with jQuery
+	// window.mySwipe = $('#mySwipe').Swipe().data('Swipe');
+}
 
 // Change buttons images when mouse rolls over them.
 $('.hoverOnOffSrc').hover(
@@ -30,18 +40,6 @@ $('.hoverOnOffSrc').hover(
 		$( this ).attr('src', offsrc);	
 	}
 );
-
-// Load Macy's data.
-	$.ajax({
-			headers: { 
-					Accept : "application/json",
-					"X-Macys-Webservice-Client-Id" : "hackathon"
-			},
-			type:"GET",
-			url: "http://api.macys.com/v3/catalog/category/29391/browseproducts",
-			error: onMacysError,
-			success: onMacysResults
-	});
 
 // Load Capital One data.
 	$.ajax({
@@ -81,32 +79,79 @@ function onMacysResults(data, status) {
             
     // Add button each product returned
     var productArray = data.category[0].product.product;    
-    for( var i=0; i < productArray.length && i < 6 ; i++ ) {
+    for( var i=0; i < productArray.length ; i++ ) {
         var product = productArray[i];
         
 		    var productLink = $('<a>', { className: 'macysProductUrl', href: product.summary.producturl } );
-
         var productImage = $('<img>', { className: 'macysProductImage', src: product.image[0].imageurl } );
-        productLink.append(productImage);
-        
+        productLink.append(productImage);        
         var productText = $('<p>');
         productText.text(product.summary.name);        
-        productLink.append(productText);
-        
-        productLink.append( $( '<div style="clear:both" ></div>' ) );
-        	            
+        productLink.append(productText);        
+        productLink.append( $( '<div style="clear:both" ></div>' ) );        	            
     		$('#macysResults').append(productLink);
-    		//$('#macysResults').append( $('<br />') );
-        
-    		//alert(product.summary.name);
     }
-    
+        
     // Add link to more items in category
+    var nextUrl = 'javascript:macysNext()';
+    var nextLink = 
+    	$('<a>', { className: 'macysSeeMoreUrl', href: nextUrl } )
+          .text("More");          
+    $('#macysResults').append(nextLink);
+    
+    
     var seeMoreUrl = data.category[0].summary.categorypageurl;
     var seeMoreLink = 
     	$('<a>', { className: 'macysSeeMoreUrl', href: seeMoreUrl } )
-          .text('See More');          
+          .text("Visit Macy's");          
     $('#macysResults').append(seeMoreLink);
+    
+}
+
+function setMacysCategory(newCategory) {
+
+	currentPage = 1;
+
+	macysCategory = newCategory;
+
+	macysNext();
+
+}
+
+function macysNext() {
+
+    $('#macysResults').empty();    
+    var seeMoreLink = 
+    	$('<a>', { className: 'macysSeeMoreUrl' } )
+          .text("Loading Macy's results...");          
+    $('#macysResults').append(seeMoreLink);
+        
+    var macysUrl =   "http://api.macys.com/v3/catalog/category/" 
+    	+ macysCategory 
+    	+ "/browseproducts?resultsperpage=5&currentpage=" 
+    	+ currentPage;
+        
+// Load Macy's data.
+	$.ajax({
+			headers: { 
+					Accept : "application/json",
+					"X-Macys-Webservice-Client-Id" : "hackathon"
+			},
+			type:"GET",
+			timeout: 60000,
+			url: macysUrl,
+			error: onMacysError,
+			success: onMacysResults
+	});
+	    
+	currentPage++;
+
+}
+
+function leaveMacys() {
+	//location.reload();
+	
+	closeLikeOptions();
 }
 
 function findSchools() {
@@ -139,6 +184,8 @@ function reserveTour() {
 function furnish() {
 	$('.page').hide();
 	$('#macysPage').show();
+	
+	macysNext();
 }
 
 function findApartments() {

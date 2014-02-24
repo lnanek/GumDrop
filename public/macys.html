@@ -1,0 +1,138 @@
+<!DOCTYPE HTML> 
+<html>
+<head>
+	<title>Home Sweet Home 2.0</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=8">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'/> 
+	<link href='style.css' rel='stylesheet'/>
+</script>
+</head>
+<body>
+
+<h1>
+	Home Sweet Home 2.0<br />
+	SF Neighborhoods
+</h1>
+
+<div id="navBar" style='max-width:500px;margin:0 auto' >
+	<a href="index.html" >Home</a>
+	&nbsp;&nbsp;
+	<a href="about.html">About</a>
+</div>
+
+<br />
+
+<div id="navBar" style='max-width:500px;margin:0 auto' >
+		<a href="javascript:setMacysCategory('29391')" >Furniture</a>
+		<a href="javascript:setMacysCategory('22672')" >For The Home</a>
+		<a href="javascript:setMacysCategory('7495')" >Bed & Bath</a>
+		<a href="javascript:setMacysCategory('7497')" >Kitchen</a>
+</div>
+
+<br />
+
+<div id='mySwipe' style='max-width:500px;margin:0 auto' class='swipe page'>
+  <div class='swipe-wrap'>
+    
+  </div>
+  
+  <!-- Buttons under the swipe content. -->
+  <div>
+		<!-- Dislike - see next -->
+		<div style="text-align: center; float: left; width: 49%" >
+			<img draggable="false"  onclick='mySwipe.next()' 
+				class="hoverOnOffSrc"
+  			src="images/button_left_dark.png" 
+  			onsrc="images/button_left.png"
+  			offsrc="images/button_left_dark.png"
+	  		/>
+  	</div>
+
+		<!-- Like - see options -->  	
+		<div style="text-align: center; float: left; width: 49%" >
+			<img draggable="false"  onclick='showLikeOptions()' 
+				class="hoverOnOffSrc"
+  			src="images/button_like.png" 
+  			onsrc="images/button_like_dark.png"
+  			offsrc="images/button_like.png"
+	  		/>
+  	</div>
+  	
+  	<div style="clear:both"></div>
+  </div>
+  
+</div>
+
+<!-- Options menu that pops up when someone likes the neighborhood -->
+<div id='likeOptions' class="page" style='display:none; max-width:500px;margin:0 auto' >
+  <div class="action" >Research</div> 
+  
+  <div class="likeActionButton" onclick='findSchools()'>Schools</div> 
+
+  <div class="action" >Visit</div> 
+  
+  <div class="likeActionButton" onclick='findHotels()'>Hotels</div> 
+
+  <div class="likeActionButton" onclick='reserveTour()'>Reserve Tour</div> 
+
+  <div class="action" >Settle</div> 
+  
+  <div class="likeActionButton" onclick='findApartments()'>Apartments</div> 
+  
+  <div class="likeActionButton" onclick='furnish()'>Furnish</div> 
+
+  <div style="text-align: left" onclick="closeLikeOptions()" >
+  	<img draggable="false"  class="hoverOnOffSrc"
+  		src="images/button_back.png" 
+  		onsrc="images/button_back_dark.png"
+  		offsrc="images/button_back.png"
+  		/>
+  </div> 
+</div>
+
+<!-- Macy's search results -->
+<div id="macysPage" class="page" style='display:none; max-width:500px;margin:0 auto' >
+
+	<div id="macysMenu">
+		<a href="javascript:setMacysCategory('29391')" >Furniture</a>
+		<a href="javascript:setMacysCategory('22672')" >For The Home</a>
+		<a href="javascript:setMacysCategory('7495')" >Bed & Bath</a>
+		<a href="javascript:setMacysCategory('7497')" >Kitchen</a>
+	</div>
+
+	<div id="macysResults" >
+		<a class="macysLoadingMessage">Loading Macy's For the Home...</a>
+	</div>
+
+<!--	
+  <div>
+		<div style="float: left; width: 49%; text-align: center" >
+			More
+  	</div>
+
+		<div style="float: left; width: 49%; text-align: center" >
+			Visit Macy's
+  	</div>
+  	
+  	<div style="clear:both"></div>
+  </div>	
+-->
+	
+  <div style="text-align: left" onclick="leaveMacys()" >
+  	<img draggable="false"  class="hoverOnOffSrc"
+  		src="images/button_back.png" 
+  		onsrc="images/button_back_dark.png"
+  		offsrc="images/button_back.png"
+  		/>
+  </div> 
+</div>
+
+<br />
+
+<div id="capitalOneResults" style='max-width:500px;margin:0 auto' >
+	Capital One Rewards Balance: Loading...
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src='swipe.js' ></script>
+<script src='macys.js' ></script>

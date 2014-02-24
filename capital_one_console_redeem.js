@@ -22,14 +22,6 @@ var signature = hash.toString();
 
 //var post_data = querystring.stringify({
 var post_data = JSON.stringify({
-
-//      'localAmount' : ['1'],
-//      'localCurrency': ['usd'],
-//      'conversionRate': ['100'],
-//      'pointsAmount' : [100],
-//      'pointsCurrency' : ['miles']
-//  });
-  
 "redemptionUser":"lnanek",
 	"items":[
 		{
@@ -44,26 +36,14 @@ var post_data = JSON.stringify({
 	]	
 } 
 ); 
-  
-  
-  
-  
-//  var post_data = querystring.stringify({
-//      'localAmount' : '{scale:1}',
-//      'localCurrency': 'usd',
-//      'conversionRate': '{scale:1}',
-//      'pointsAmount' : 1,
-//      'pointsCurrency' : 'miles'
-//  });
-  
-//  post_data = '{' + post_data + '}';
-  
+    
 console.log('POST BODY: ' + post_data); 
 
 var options = { 
        host: url, 
         port:443, 
-        path: '/rewards/v1/deposit', 
+        //path: '/rewards/v1/deposit', 
+        path: '/rewards/v1/redeem', 
         method: 'POST', 
         headers: { 
                  "Api-Key": apiKey, 
