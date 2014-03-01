@@ -340,3 +340,31 @@ div.rightside {
 	display: block;
 	float: right;
 }
+
+div.circle-left {
+	background-color: #dddddd;	
+	width: 100px !important;
+	height: 100px !important;
+	border-radius: 100px !important;
+	color: dimgray;
+	text-align: center;
+	line-height: 100px;
+	padding: 0;
+	margin: 0;
+	float: left; 
+	margin-right:1em;
+}
+div.circle-right{
+	background-color: #dddddd;	
+	width: 100px !important;
+	height: 65px !important;
+	border-radius: 100px !important;
+	color: dimgray;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	float: right; 
+	margin-left:1em;
+	padding-top: 35px;
+	
+}
