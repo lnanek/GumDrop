@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:svg="http://www.w3.org/2000/svg" id="svg2" viewBox="0 0 407.41 204.9" version="1.0">
+  <defs id="defs4">
+    <linearGradient id="linearGradient5344" x1="26.5" gradientUnits="userSpaceOnUse" y1="51.3" gradientTransform="matrix(-7.2289 -5.8075 -4.0773 5.0752 718.56 349.71)" x2="26.5" y2="61.618">
+      <stop id="stop2310" stop-color="#41a9ff" offset="0"/>
+      <stop id="stop2312" stop-color="#41a9ff" stop-opacity="0" offset="1"/>
+    </linearGradient>
+    <linearGradient id="linearGradient5348" x1="16.902" gradientUnits="userSpaceOnUse" y1="12.175" gradientTransform="matrix(4.7783 -5.9478 8.4718 6.806 164.19 356.13)" x2="2.7053" y2="14.088">
+      <stop id="stop2189" stop-color="#fff" offset="0"/>
+      <stop id="stop2191" stop-color="#fff" stop-opacity="0" offset="1"/>
+    </linearGradient>
+    <radialGradient id="radialGradient5350" gradientUnits="userSpaceOnUse" cy="28.498" cx="456.52" gradientTransform="matrix(3.2348 .32925 -.040219 .39514 -1057.4 94.409)" r="168.07">
+      <stop id="stop2328" stop-color="#fff" offset="0"/>
+      <stop id="stop2330" stop-color="#fff" stop-opacity="0" offset="1"/>
+    </radialGradient>
+  </defs>
+  <g id="layer1" transform="translate(-192.04 -233.3)">
+    <g id="g5339" transform="matrix(.99029 .13902 -.13902 .99029 52.356 -52.934)">
+      <path id="path1432" style="color:#000000" d="m210.34 461.54c-36.24-167.19 156.08-289.93 294.89-178.85l38.226-47.582 60.877 170.72-182.72-19.048 39.421-49.069c-99.272-84.646-231.15-14.447-250.69 123.83z" stroke="url(#linearGradient5344)" stroke-width="7.7696" display="block" fill="url(#linearGradient5344)"/>
+      <path id="path2177" opacity=".69886" style="color:#000000" d="m210.97 429.6c-7.92-149.87 170.71-241.24 297.3-135.68l33.022-41.105 51.547 143.82-154.33-15.889 33.75-42.011c-99.722-89.177-221.83-32.556-261.29 90.864z" stroke="url(#linearGradient5348)" stroke-miterlimit="10" stroke-width="7.7696" display="block" fill="none"/>
+      <path id="path9796" opacity=".69886" style="block-progression:tb;color:#000000;text-transform:none;text-indent:0" d="m542.61 244.98-4.3474 5.4048-30.637 38.157c-63.97-51.07-137.55-55.83-204.77-24.02-42.237 19.986-68.639 61.563-68.639 61.563 138.43-132.94 204.77 26.088 333.85-10.057z" display="block" fill="url(#radialGradient5350)"/>
+    </g>
+  </g>
+  <metadata>
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <cc:license rdf:resource="http://creativecommons.org/licenses/publicdomain/"/>
+        <dc:publisher>
+          <cc:Agent rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title>Curved Arrow, Blue</dc:title>
+        <dc:date>2012-03-14T14:15:01</dc:date>
+        <dc:description>Shiny blue curved arrow</dc:description>
+        <dc:source>http://openclipart.org/detail/168820/curved-arrow-blue-by-tdhoward75</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>tdhoward75</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>arrow</rdf:li>
+            <rdf:li>blue</rdf:li>
+            <rdf:li>clip art</rdf:li>
+            <rdf:li>clipart</rdf:li>
+            <rdf:li>curve</rdf:li>
+            <rdf:li>curved</rdf:li>
+            <rdf:li>fancy</rdf:li>
+            <rdf:li>glass</rdf:li>
+            <rdf:li>glossy</rdf:li>
+            <rdf:li>shiny</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/>
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>

@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:svg="http://www.w3.org/2000/svg" id="svg2" viewBox="0 0 20.841 30.092" version="1.1">
+  <defs id="defs4">
+    <linearGradient id="linearGradient3851" x1="66.81" gradientUnits="userSpaceOnUse" y1="49.537" gradientTransform="translate(-24)" x2="49.402" y2="35.062">
+      <stop id="stop3847" stop-color="#ffc84f" offset="0"/>
+      <stop id="stop3849" stop-color="#ffc84f" stop-opacity="0" offset="1"/>
+    </linearGradient>
+    <linearGradient id="linearGradient3859" x1="54.512" gradientUnits="userSpaceOnUse" y1="31.969" gradientTransform="translate(-24)" x2="76.595" y2="32.045">
+      <stop id="stop3855" stop-color="#8e9194" offset="0"/>
+      <stop id="stop3863" stop-color="#a1a3a6" stop-opacity=".74902" offset=".15319"/>
+      <stop id="stop3861" stop-color="#b4b6b8" stop-opacity=".49804" offset=".7456"/>
+      <stop id="stop3857" stop-color="#dbdcdd" stop-opacity="0" offset="1"/>
+    </linearGradient>
+    <linearGradient id="linearGradient4019" x1="39.283" gradientUnits="userSpaceOnUse" y1="49.674" gradientTransform="translate(-.31303)" x2="39.258" y2="42.952">
+      <stop id="stop4015" stop-color="#d49610" offset="0"/>
+      <stop id="stop4017" stop-color="#6d3f04" offset="1"/>
+    </linearGradient>
+  </defs>
+  <g id="layer2" transform="translate(-28.658 -25.375)">
+    <path id="path3803" stroke="#818181" stroke-width="1px" fill="url(#linearGradient3859)" d="m31.012 38.041v-7.1038s0.22961-5.123 7.5621-5.0414c8.2191 0.09147 8.4818 3.9629 8.4024 4.2012v7.9441h-3.972v-6.1108s0-2.979-3.972-3.0554c-3.972-0.07639-4.0484 2.979-4.0484 2.979v6.1872z"/>
+    <rect id="rect3765" ry=".99301" height="16.881" width="19.784" stroke="#b97913" y="38.041" x="29.179" fill="url(#linearGradient3851)"/>
+    <path id="path3998" stroke="url(#linearGradient4019)" stroke-width="1px" fill="#6d3f04" d="m37.996 48.877 0.02434-3.4318s-1.0709-0.14603-1.0709-1.8254 1.9738-1.7037 1.9738-1.7037 2.0254 0.0036 2.0421 1.582c0.0182 1.728-1.0222 1.9228-1.0222 1.9228l-0.01662 3.4383z"/>
+    <g id="g4225" fill="#ce8c02" transform="translate(22.552 -23.476)">
+      <rect id="rect4117" y="63.51" width="14.966" x="8.9798" height="1.0334"/>
+      <rect id="rect4119" y="65.52" width="4.4187" x="8.9798" height="1.033"/>
+      <rect id="rect4119-4" y="67.531" width="4.4187" x="8.9798" height="1.033"/>
+      <rect id="rect4119-9" y="69.541" width="4.4187" x="8.9798" height="1.033"/>
+      <rect id="rect4119-46" y="71.552" width="4.4187" x="8.9798" height="1.033"/>
+      <rect id="rect4117-0" y="73.562" width="14.966" x="8.9798" height="1.0334"/>
+      <rect id="rect4117-3" y="75.572" width="14.966" x="8.9798" height="1.0334"/>
+      <rect id="rect4119-6" y="65.644" width="4.4187" x="19.528" height="1.033"/>
+      <rect id="rect4119-4-2" y="67.654" width="4.4187" x="19.528" height="1.033"/>
+      <rect id="rect4119-9-4" y="69.664" width="4.4187" x="19.528" height="1.033"/>
+      <rect id="rect4119-46-5" y="71.675" width="4.4187" x="19.528" height="1.033"/>
+    </g>
+  </g>
+  <metadata>
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <cc:license rdf:resource="http://creativecommons.org/licenses/publicdomain/"/>
+        <dc:publisher>
+          <cc:Agent rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title>Padlock</dc:title>
+        <dc:date>2013-02-18T13:43:27</dc:date>
+        <dc:description>Brass colored lock, silver colored hasp</dc:description>
+        <dc:source>http://openclipart.org/detail/175194/padlock-by-twx-175194</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>TWX</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>Padlock</rdf:li>
+            <rdf:li>candado</rdf:li>
+            <rdf:li>cerradura</rdf:li>
+            <rdf:li>clip art</rdf:li>
+            <rdf:li>clipart</rdf:li>
+            <rdf:li>enfermer</rdf:li>
+            <rdf:li>llave</rdf:li>
+            <rdf:li>lock</rdf:li>
+            <rdf:li>locked</rdf:li>
+            <rdf:li>serrure</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/>
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>

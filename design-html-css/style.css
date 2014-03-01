@@ -1,0 +1,342 @@
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+div {
+	color: DarkGray;
+}
+
+.homepage .headerwrapper {
+	background-color: transparent;
+}
+
+.clearing {
+	clear: both;
+}
+
+.homepage .headerwrapper {	
+	padding-top: 1em;		
+}
+
+.headerwrapper {	
+	padding-top: 0.5em;		
+	background-color: white;
+}
+
+.homepage .headerwrapper .header {
+	padding-bottom: 0em;
+}
+
+.header {
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-bottom: 2.5em;
+}		
+
+.homepage .header a {
+	color: white;
+}
+
+.header a {
+	color: darkgray;
+	text-decoration: none;
+}
+
+.header .nav a {
+	padding-left: 1.5em;
+}
+
+.header > img {
+	float: left;
+}
+.header .login {
+	float: right;
+	padding-left: 0.25em;
+	padding-right: 0.25em;
+	margin-left: 0.5em;
+	margin-right: 0.5em;
+}
+
+.createlistingpage .createlistinglink,
+.getlinkpage .createlistinglink,
+.dashboardpage .dashboardlink {
+	padding-bottom: 0.25em;
+	border-bottom: 1px solid DarkGray;
+}
+
+.registerpage .login {
+	padding-bottom: 0.25em;
+	border-bottom: 1px solid DarkGray;
+	padding-left: 0.25em;
+}
+
+.header .nav {
+	float: left;
+	margin-left: 2em;
+}
+
+.homepage .header div {
+	margin-top: 0.5em;
+}
+
+body.homepage {
+	background-color: white;
+	background:url('images/girl_with_computer_faded.png') no-repeat center center fixed;
+
+	background-size: 100% auto;
+	-webkit-background-size: 100% auto;
+	-moz-background-size: 100% auto;
+	-o-background-size: 100% auto;
+	background-position: top;
+}
+
+body {
+	background-color: lightgray;
+}
+
+.homepage .content {
+	background-color: white;
+	
+}
+	
+.content {
+	background-color: lightgray;
+	clear: both;
+	height: 100%;
+	padding-top: 2em;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+div.section {
+	margin-top: 2em;
+	margin-bottom: 2em;
+	max-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	clear: both;
+	background-color: white;
+}
+
+.padder {
+	padding: 2em;
+}
+
+.thinpadder {
+	padding-top: 0.5em;
+	padding-right: 0.5em;
+	padding-left: 1em;
+	padding-bottom: 1em;
+}
+
+div.pricelabel {
+	margin-top: 0.75em !important;
+	margin-right: 0.5em !important;
+	padding-right: 0em !important;
+}
+
+.productlistingpage .rightimage {
+	padding-top: 0px;
+	margin-top: 0px;
+}
+
+.productlistingpage .rightimage .button {
+	margin-top: 0px;
+}
+
+table {
+	width: 100%;
+	border-collapse:collapse;
+}
+
+th, td {
+	text-align: left;
+	border-bottom: 1px solid LightGray;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+th {
+	color: LightGray;
+}
+
+td {
+	border-top: 1px solid LightGray;
+	color: DarkGray !important;
+}
+
+.sectionheader {
+	margin-top: 2em;
+	margin-bottom: 0em;
+	max-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	clear: both;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+
+.sectionheader + div {
+	padding-top: 0px;
+	margin-top: 1em;
+}
+
+.section div {
+	overflow: hidden;
+	padding-bottom: 0.5em;
+	padding-top: 0.5em;
+}
+
+.section a {
+	color: DarkCyan;
+	text-decoration: none;
+}
+
+input, textarea {
+	display: block;
+	margin-bottom: 1em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	border: 1px solid LightGray;
+	margin-top: 0px;
+	width: 100%;
+	border-style:solid;
+	
+	/* clear hint and change color as needed */
+	color: LightGray;
+	padding-left: 2em;
+}
+
+.createlistingpage input, .createlistingpage textarea {	
+	background-image:url('images/help_icon.png');
+	background-position: right top; 
+	background-repeat: no-repeat;
+	min-height: 59px;
+}
+
+textarea {
+	text-align: left;
+}
+
+h2 {
+	padding-bottom: 1em;
+}
+
+h3 {
+	font-size: 3em;
+	color: SkyBlue;
+	text-align: center;
+	padding: 0px;
+	margin: 0px;
+	margin-bottom: -0.25em;
+}
+
+h4 {
+	color: DimGray;
+	font-weight: bold;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+
+.centered {
+	text-align: center;
+}
+
+.footer {
+	text-align: center;
+}
+
+.lead {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 600px;
+	clear: both;
+	padding-top: 4em;
+	margin-bottom: 4em;
+	color: white;
+	text-align: center;
+	/*border: 1px solid red;*/
+}
+
+.description {
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.tagline {
+	font-size: xx-large;
+}
+
+div.button {
+	margin-top: 2em;
+	background-color: lightgray;
+	color: black;
+	
+	padding-top: 1em;
+	padding-bottom: 1em;
+	
+	width: 30%;
+	margin-left: auto;
+	margin-right: auto;			
+	text-align: center;	
+}
+
+div.button.short {
+	padding-top: 0.25em;
+	padding-bottom: 0.25em;
+	margin-top: 0.25em;
+	margin-bottom: 0.25em;
+	width: 60%;
+	margin-right: 0px;
+}
+
+/* TODO size buttons by content */
+.rightimage .button {
+	width: 100%;
+}
+
+.footer .button, .section .button, .sectionheader .button {
+	color: white;
+	background-color: #29abe1;
+}
+
+.leftimage {
+	float: left;
+	display: block;
+	padding-right: 2em;
+}
+
+div.leftside, .leftside {
+	float: left;
+	width: 49%;
+	margin: 0px;
+}
+
+.sectionheader h2 {
+	color: DimGray;
+	margin-top: 0.5em;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+
+.rightside div.button {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+div.rightside {
+	float: right;
+	width: 49%;
+	padding: 0px;
+}
+
+.rightimage {
+	display: block;
+	float: right;
+}
