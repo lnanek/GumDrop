@@ -1,5 +1,18 @@
 <!doctype html>
 <html lang="en">
+
+<!-- TODO: flip animation on buy like http://codepen.io/beyondSimple/pen/gwEpd ? -->
+
+<!-- TODO: connect load more hook into loading more items from server (pagination) -->
+
+<!-- TODO: connect buy hook into triggering coinbase purchase -->
+
+<!-- TODO: while holding item, show overlay indicating holding longer without cancel will buy. e.g.:
+http://smotko.si/tinder-css/
+-->
+
+<!-- TODO: tutorial overlay on first load, so users know what to do. or manual advance/buy buttons -->
+
 <head>
   <meta charset="UTF-8">
   <title>Demo</title>
@@ -140,7 +153,7 @@ body {
 			}
     	
     	// Adjust index so we stay on the new slide we just swiped to.
-    	mySwiper.swipeTo(mySwiper.activeIndex - 1, 0, false);
+    	mySwiper.swipeTo(0, 0, false);
     },
     onTouchStart: function() {
       purchaseHoldFingerPosition = 0;

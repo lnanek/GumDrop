@@ -9,6 +9,10 @@ DigitalMarketplace::Application.routes.draw do
   end
   root to: "home#index"
   get '/products/:id/download', to: 'products#download', as: 'product_download'
+  get '/products/public/:id', to: 'products#show_public', as: 'product_public' 
+  post '/orders', to: 'orders#create', as: 'create_order'
+  get '/orders/:id', to: 'orders#get', as: 'get_order'
+  get '/oauth/coinbase', to: 'coinbase#code'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

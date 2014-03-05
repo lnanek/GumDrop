@@ -15,7 +15,14 @@
 			<% end %>
 		<% end %>
 	<% end %>
-	<a href='/products/new'> Add Product </a>
+	<div>
+		<a href='/products/new'> Add Product </a>
+	</div>
+	<% if connect_to_coinbase_visible? %>
+		<div >
+			<%= link_to "Connect Coinbase Account", link_to_coinbase_auth %>
+		</div>
+	<% end %>
 <% else %>
   <p>The easiest way to sell your digital goods.</p>
 <% end %>

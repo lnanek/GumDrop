@@ -14,3 +14,13 @@
 </p>
 
 <%= link_to "Download", product_download_path %>
+
+<br/>
+<br/>
+<div>
+	Paste the following HTML to create a Download Link
+	<div>
+		<textarea rows="2" cols="110"><a href='<%= get_product_buy_link @product %>'> Buy <%= @product.name %> </a>
+		</textarea>
+	</div>
+</div>
