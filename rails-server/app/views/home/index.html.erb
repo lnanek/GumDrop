@@ -1,0 +1,21 @@
+
+
+<% if user_signed_in? %>
+	<% if current_user.products.nil? or current_user.products.empty? %>
+		<p> No Products </p>
+	<% else %>
+		You have <%= current_user.products.size %> products.
+		<% current_user.products.each do |x| %>
+			<%= link_to x do %>
+				<div class = "row">
+					<%=  x.name %>
+					<%=  x.price %>
+					BTC
+				</div>
+			<% end %>
+		<% end %>
+	<% end %>
+	<a href='/products/new'> Add Product </a>
+<% else %>
+  <p>The easiest way to sell your digital goods.</p>
+<% end %>
