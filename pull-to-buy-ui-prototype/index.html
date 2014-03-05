@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Demo</title>
+  <link rel="stylesheet" href="css/idangerous.swiper.css">
+  <meta name="viewport" content="width=device-width">
+  <style>
+/* Demo Styles */
+html {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 1.5;
+  position: relative;
+  height: 100%;
+  background: #333;
+  box-shadow: 0px 0px 100px #000 inset;
+}
+.preloader {
+  position: absolute;
+  left: 0;
+  top: -100px;
+  z-index: 0;
+  color: #fff;
+  text-align: center;
+  line-height: 100px;
+  height: 100px;
+  width: 100%;
+  opacity: 0;
+  font-size: 25px;
+  -webkit-transition: 300ms;
+  -moz-transition: 300ms;
+  -ms-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
+  background: rgba(0,0,0,0.1);
+}
+.preloader.visible {
+  top: 0;
+  opacity: 1;
+}
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+  
+}
+.red-slide {
+  background: #ca4040;
+}
+.blue-slide {
+  background: #4390ee;
+}
+.orange-slide {
+  background: #ff8604;
+}
+.green-slide {
+  background: #49a430;
+}
+.pink-slide {
+  background: #973e76;
+}
+.swiper-slide {
+  height: 100px;
+  width: 100%;
+  line-height: 100px;
+  opacity: 0.2;
+  -webkit-transition: 300ms;
+  -moz-transition: 300ms;
+  -ms-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
+}
+.swiper-slide-visible {
+  opacity: 1;
+}
+.swiper-slide .title {
+  font-style: italic;
+  font-size: 42px;
+}
+  </style>
+</head>
+<body>
+  <div class="preloader">
+    Purchasing...
+  </div>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide red-slide">
+        <div class="title">1: Alice in Wonderland</div>
+      </div>
+      <div class="swiper-slide blue-slide">
+        <div class="title">2: Moby Dick</div>
+      </div>
+      <div class="swiper-slide orange-slide">
+        <div class="title">3: Charles Dickens</div>
+      </div>
+      <div class="swiper-slide green-slide">
+        <div class="title">4: Snow Crash</div>
+      </div>
+      <div class="swiper-slide pink-slide">
+        <div class="title">5: The Great Gatsby</div>
+      </div>
+      <div class="swiper-slide red-slide">
+        <div class="title">6: A Tale of Two Cities</div>
+      </div>
+      <div class="swiper-slide blue-slide">
+        <div class="title">7: A Tree Grows in Brooklyn</div>
+      </div>
+    </div>
+  </div>
+  <script src="js/jquery-1.10.1.min.js"></script>
+  <script src="js/idangerous.swiper-2.1.min.js"></script>
+  <script>
+  var purchaseHoldFingerPosition = 0;
+  var loadMoreHoldFingerPosition = 0;
+  var mySwiper = new Swiper('.swiper-container',{
+    slidesPerView:'1',
+    watchActiveIndex: true,
+    onSlideChangeStart: function(){
+    	//alert('slide changed: ' + mySwiper.activeIndex );
+
+			// If this is the last slide, don't remove it. Let pull to load more trigger.
+			var lastSlide = mySwiper.getLastSlide();
+			var activeSlide = mySwiper.activeSlide();
+			if ( lastSlide == activeSlide ) {
+				return;
+			}
+
+			// Otherwise remove any previous slides.
+			for(var i = 0; i < mySwiper.activeIndex; i++) {
+	    	mySwiper.removeSlide(i);			
+			}
+    	
+    	// Adjust index so we stay on the new slide we just swiped to.
+    	mySwiper.swipeTo(mySwiper.activeIndex - 1, 0, false);
+    },
+    onTouchStart: function() {
+      purchaseHoldFingerPosition = 0;
+      loadMoreHoldFingerPosition = 0;
+    },
+    onResistanceBefore: function(s, pos){
+      purchaseHoldFingerPosition = pos;
+    },
+    onResistanceAfter: function(s, pos){
+      loadMoreHoldFingerPosition = pos;
+    },
+    onTouchEnd: function(){
+    
+      if (purchaseHoldFingerPosition>100) {
+        // Hold Swiper in required position
+        mySwiper.setWrapperTranslate(0,100,0)
+
+        //Dissalow futher interactions
+        mySwiper.params.onlyExternal=true
+
+        //Show loader
+        $('.preloader').addClass('visible');
+
+
+				var activeSlide = mySwiper.activeSlide();
+
+				var title = $(activeSlide).find('.title').text();
+
+        purchase(title);
+      }
+      
+      if (loadMoreHoldFingerPosition>100) {
+      	alert(' TODO: load more ');
+      }
+      
+    }
+  })
+  function purchase(title) {
+
+    setTimeout(function(){
+
+      //Release interactions and set wrapper
+      mySwiper.setWrapperTranslate(0,0,0)
+      mySwiper.params.onlyExternal=false;
+
+
+      //Hide loader
+      $('.preloader').removeClass('visible')
+      
+      alert('TODO go to purchase screen for: ' + title);
+      
+    },1000)
+
+
+  }
+  </script>
+</body>
+</html>
