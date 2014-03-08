@@ -11,7 +11,7 @@
 http://smotko.si/tinder-css/
 -->
 
-<!-- TODO: tutorial overlay on first load, so users know what to do. or manual advance/buy buttons -->
+<!-- TODO remember user's last location for when come back? -->
 
 <head>
   <meta charset="UTF-8">
@@ -139,7 +139,7 @@ body {
     watchActiveIndex: true,
     onSlideChangeStart: function(){
     	//alert('slide changed: ' + mySwiper.activeIndex );
-
+    	
 			// If this is the last slide, don't remove it. Let pull to load more trigger.
 			var lastSlide = mySwiper.getLastSlide();
 			var activeSlide = mySwiper.activeSlide();
