@@ -1,0 +1,3 @@
+[submodule "rails-server"]
+	path = rails-server
+	url = https://github.com/lnanek/DigitalMarketPlace.git
