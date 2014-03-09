@@ -7,7 +7,7 @@
 
 		<div class="headerwrapper">
 			<div class="header">
-				<img width="120" height="23" src="images/gumdrop_logo.png" />
+				<img src="images/logoblue.png" />
 
 				<div class="login">
 					<a href="login.html">LOGOUT</a>
@@ -30,26 +30,29 @@
 			<div class="sectionheader">
 			
 				<div class="rightside" onclick="window.location = 'createlisting.html' ">
-					<div class="button" style="width: 100%">
+					<div class="createbutton" id="createlisting">
 						&nbsp;&nbsp;CREATE&nbsp;NEW&nbsp;LISTING&nbsp;&nbsp;
 					</div>						
 				</div>
 
-				<h2 class="leftside">CURRENT LISTINGS</h2>	
+				<h2 class="leftside" id="dashboardtitle">CURRENT LISTINGS</h2>	
 				
 				<br class="clearing" />		
 			</div>
 				
-			<div class="section">
+			<div class="section" id="dashcontainer">
 
-				<div class="padder" onclick="window.location = 'productlisting.html' ">
+				<div class="padder" id="dashboardtable" onclick="window.location = 'productlisting.html' ">
 					<table>
-						<tr>
+						<thead>
+						<tr id="tablehead">
 							<th>Product Name</th>
 							<th>Unit Price</th>
 							<th>Sold</th>
 							<th>Total Sales</th>
-						</tr>
+							</tr>
+						</thead>
+						<tbody>
 						<tr>
 							<td>Alice in Wonderland</td>
 							<td>BTC 0.0015</td>
@@ -104,6 +107,7 @@
 							<td>893</td>
 							<td>BTC 1.3395</td>
 						</tr>
+						</tbody>
 
 
 					</table>
